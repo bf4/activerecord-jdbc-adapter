@@ -1,8 +1,12 @@
 # -*- encoding: utf-8 -*-
+warn "callling #{__LINE__} in #{__FILE__}"
 
 $LOAD_PATH << File.expand_path('../lib', __FILE__)
+warn "callling #{__LINE__} in #{__FILE__}"
 require 'jdbc/derby'
+warn "callling #{__LINE__} in #{__FILE__}"
 version = Jdbc::Derby::VERSION
+warn "callling #{__LINE__} in #{__FILE__}"
 Gem::Specification.new do |s|
   s.name = %q{jdbc-derby}
   s.version = version

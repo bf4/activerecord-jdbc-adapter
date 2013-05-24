@@ -1,4 +1,6 @@
+warn "callling #{__LINE__} in #{__FILE__}"
 warn "Jdbc-MySQL is only for use with JRuby" if (JRUBY_VERSION.nil? rescue true)
+warn "callling #{__LINE__} in #{__FILE__}"
 
 module Jdbc
   module MySQL

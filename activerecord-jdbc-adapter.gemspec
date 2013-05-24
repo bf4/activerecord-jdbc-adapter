@@ -1,6 +1,9 @@
 # -*- encoding: utf-8 -*-
+warn "callling #{__LINE__} in #{__FILE__}"
 $:.push File.expand_path("../lib", __FILE__)
+warn "callling #{__LINE__} in #{__FILE__}"
 require 'arjdbc/version'
+warn "callling #{__LINE__} in #{__FILE__}"
 
 Gem::Specification.new do |s|
   s.name        = "activerecord-jdbc-adapter"

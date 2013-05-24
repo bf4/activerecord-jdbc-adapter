@@ -1,7 +1,10 @@
 # -*- encoding: utf-8 -*-
+warn "callling #{__LINE__} in #{__FILE__}"
 
 $LOAD_PATH << File.expand_path('../lib', __FILE__)
+warn "callling #{__LINE__} in #{__FILE__}"
 require 'jdbc/mysql'
+warn "callling #{__LINE__} in #{__FILE__}"
 version = Jdbc::MySQL::VERSION
 Gem::Specification.new do |s|
   s.name = %q{jdbc-mysql}
